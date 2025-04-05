@@ -1,0 +1,127 @@
+.main{
+  width: 100%;
+  height: 100%;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(60, 2, 2) 0%, rgba(0,0,0,1) 100%);
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#sim {
+  background-color: #ff0000a8; /* rosa forte e vibrante */
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.181);
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: bold;
+}
+
+#sim::after {
+  content: " 💓";
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+#nao {
+  background-color: #ff0000a8;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+#nao::after {
+  content: " 🥲";
+  animation: pulse 1.5s infinite;
+}
+
+.centro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1sim{
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+#loveu{
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+#texto1{
+  text-align: initial;
+  font-size: 20px;
+}
+
+h4{
+  text-align: center;
+  margin: 0 20px;
+  font-size: 20px;
+}
+
+.polaroid {
+  background: white;
+  padding: 10px 10px 30px 10px;
+  border-radius: 10px;
+  width: 50vw;
+  margin: 30px auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transform: rotate(-2deg);
+  transition: 0.3s ease;
+  align-items: center;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.polaroid img {
+  width: calc(50vw - 20px);
+  height: auto;
+  border-radius: 5px;
+}
+
+.caption {
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+}
