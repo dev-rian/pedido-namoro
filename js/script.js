@@ -15,5 +15,6 @@ function fugir() {
 }
 
 function responderSim() {
+  localStorage.setItem("tocarMusica", "sim");
   window.location.href = "sim.html"; // redireciona para a página de "Sim"
 }

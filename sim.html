@@ -22,8 +22,20 @@
         </div>
 
         <audio autoplay loop>
-            <source src="msc/audio.mp3#t=20" type="audio/mpeg">
+            <source src="msc/audio.mp3" type="audio/mpeg">
         </audio>
     </div>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const tocar = localStorage.getItem("tocarMusica");
+            if (tocar === "sim") {
+            const audio = document.getElementById("musica");
+            audio.play().catch(() => {
+                console.log("Reprodução bloqueada, esperando interação do usuário.");
+            });
+            localStorage.removeItem("tocarMusica");
+            }
+        });
+    </script>
 </body>
 </html>
