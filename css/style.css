@@ -60,6 +60,7 @@ button {
   position: relative;
   box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
   font-weight: bold;
+  transition: 0s;
 }
 
 #nao::after {
