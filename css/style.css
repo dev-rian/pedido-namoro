@@ -1,10 +1,10 @@
 .main{
   width: 100%;
   height: 100vh;
-  padding-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(60, 2, 2) 0%, rgba(0,0,0,1) 100%);
 }
 
@@ -57,13 +57,11 @@ button {
   cursor: pointer;
   position: relative;
   box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
-  transition: all 0.3s ease;
   font-weight: bold;
 }
 
 #nao::after {
   content: " 🥲";
-  animation: pulse 1.5s infinite;
 }
 
 .centro{
@@ -85,7 +83,7 @@ button {
 
 #texto1{
   text-align: initial;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 h4{
@@ -127,18 +125,15 @@ h4{
 }
 
 #playMusica {
-  background-color: #ff69b4;
+  background-color: #ff0000a8; /* rosa forte e vibrante */
   color: white;
-  font-size: 1.2rem;
-  padding: 12px 25px;
+  padding: 30px 90px;
+  font-size: 3rem;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
-  margin-top: 20px;
-  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
-  transition: background-color 0.3s ease;
-}
-
-#playMusica:hover {
-  background-color: #ff85c1;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.181);
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: bold;
 }
